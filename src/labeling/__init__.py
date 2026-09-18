@@ -1,0 +1,1 @@
+"""Collision-risk labeling utilities."""

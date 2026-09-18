@@ -1,0 +1,8 @@
+,count
+self_pairs,0
+duplicate_unordered_pairs,0
+negative_lateral_distance,0
+negative_vertical_separation,0
+bearing_outside_0_to_180,0
+negative_finite_tcpa,0
+infinite_tcpa,4091

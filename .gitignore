@@ -1,0 +1,54 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Environments ---
+.venv/
+.venv-clean/
+.venv-fresh/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# --- Data ---
+# ADS-B pulls and derived feature sets are large and reproducible; keep the
+# folders (via .gitkeep) but never commit their contents.
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# --- Model artifacts ---
+# Trained models live in MLflow; these are local scratch copies.
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Keep the week 3 logistic regression models so they are visible in the repo.
+!models/week3_logistic_regression_baseline.joblib
+!models/week3_logistic_regression_smote.joblib
+!models/week3_logistic_regression_class_weight.joblib
+!models/week3_logistic_regression_focal_loss.pt
+
+# --- MLflow ---
+mlruns/
+mlartifacts/
+mlflow.db
+
+# --- Optuna ---
+*.optuna
+optuna.db
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
